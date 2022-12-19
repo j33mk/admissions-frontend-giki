@@ -24,17 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const _loader = document.getElementById('loader');
 
-    (async () => {
-
-      await this.delay(2000);
-
-      if (_loader !== null) {
-        _loader.style.display = 'none';
-      }
-
-    })();
   }
 
   login(){
@@ -44,10 +34,6 @@ export class LoginComponent implements OnInit {
     //   console.log(response);
     //   localStorage.setItem('token', (response as any).token)
     // });
-  }
-
-  delay(ms: number) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
 }

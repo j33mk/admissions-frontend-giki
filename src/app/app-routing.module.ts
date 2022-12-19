@@ -10,8 +10,8 @@ const routes: Routes = [
   {
     path: '', component: LandingLayoutComponent,
     children: [
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'home', component: HomeComponent},
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent, },
     ]
   },
   {path: 'auth/login', component: LoginComponent},
