@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {UserService} from "../../services/auth/user.service";
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private _userService: UserService) {
     this.loginForm = this.prepareForm();
   }
 
@@ -30,10 +31,10 @@ export class LoginComponent implements OnInit {
   login(){
     console.log(this.loginForm.value);
     let user = this.loginForm.value;
-    // this._userService.authenticateUser(user).subscribe((response) => {
-    //   console.log(response);
-    //   localStorage.setItem('token', (response as any).token)
-    // });
+    this._userService.authenticateUser(user).subscribe((response) => {
+      console.log(response);
+      localStorage.setItem('token', (response as any).token)
+    });
   }
 
 }

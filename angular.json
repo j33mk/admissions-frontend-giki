@@ -74,7 +74,8 @@
               "browserTarget": "admissions-frontend:build:production"
             },
             "development": {
-              "browserTarget": "admissions-frontend:build:development"
+              "browserTarget": "admissions-frontend:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
