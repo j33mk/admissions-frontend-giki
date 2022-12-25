@@ -4,7 +4,12 @@
     }
  }
 
+@media (min-width: 992px) {
+  #headerLogo {
+    width: 40%;
+  }
+}
+
 .nav-link {
   border-bottom: 1px solid gray;
 }
-

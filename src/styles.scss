@@ -9,6 +9,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @import "styles/spinner";
 
+//Colors
+$amber-100: #FFECB3;
+$lime-300: #D4E157;
+$custom-sub-header-rgb: #FFE082;
+$custom-footer-rgb: #CDDC39;
+
+.bg-Amber100 {
+  $amber-100-opacity: 1;
+  background-color: rgba($amber-100, $amber-100-opacity) !important;
+}
+
+.bg-Lime300 {
+  $lime-300-opacity: 1;
+  background-color: rgba($lime-300, $lime-300-opacity) !important;
+}
+
+.bg-subheader {
+  $custom-sub-header-opacity: 1;
+  background-color: rgba($custom-sub-header-rgb, $custom-sub-header-opacity) !important;
+}
+
+.bg-footer {
+  $custom-footer-opacity: 1;
+  background-color: rgba($custom-footer-rgb, $custom-footer-opacity) !important;
+}
+
 //@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 //.material-icons{
 //  font-family: 'Material Icons' !important;
