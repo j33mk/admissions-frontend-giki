@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'https://192.168.100.80'
+  url: 'https://gikistage.ixxhar.com'
 };
 
 /*
